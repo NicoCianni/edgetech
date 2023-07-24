@@ -101,7 +101,7 @@ body{
 .hero h2{
     text-align: center;
     padding: 20px;
-    text-shadow: 8px 0 #0A0903;
+    text-shadow: 5px 0 #0A0903;
     font-size: 90px;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: bold;
@@ -236,7 +236,7 @@ body{
     width: 320px;
     height: 390px;
     text-align: center;
-    padding: 7px;
+    padding: 5px;
     background-color: #000000a1;
     box-shadow: 21px 20px 39px 1px rgba(0,0,0,0.89);
     -webkit-box-shadow: 21px 20px 39px 1px rgba(0,0,0,0.89);
@@ -472,7 +472,7 @@ body{
 
 .section-nosotros{
     color: bisque;
-    height: calc(100vh - 144.17px - 159.22px);
+    height: calc(100vh - 144.17px);
     text-align: center;
     background-image: url(../img/fondo-cibernetico.jpg);
     background-position: center; 
@@ -496,7 +496,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-style: italic;
-    padding-top: 40px;
+    padding-top: 25px;
     margin: 30px;
     color: #eee062f3;
     text-shadow: 5px 0 black;
@@ -691,6 +691,14 @@ footer p{
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .section-nosotros div h2{
+        font-size: 35px;
+    }
+
+    .section-nosotros div p{
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width:1450px) {
@@ -707,11 +715,11 @@ footer p{
     }
 
     .section-nosotros div h2{
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .section-nosotros div p{
-        font-size: 35px;
+        font-size: 30px;
     }
 }
 
@@ -731,6 +739,14 @@ footer p{
 
     .cadeteria{
         height: 400px;
+    }
+
+    .section-nosotros div h2{
+        font-size: 32px;
+    }
+
+    .section-nosotros div p{
+        font-size: 30px;
     }
 }
 
@@ -825,11 +841,11 @@ footer p{
     }
 
     .section-nosotros div h2{
-        font-size: 40px;
+        font-size: 29px;
     }
 
     .section-nosotros div p{
-        font-size: 30px;
+        font-size: 28px;
     }
 }
 
@@ -890,7 +906,7 @@ footer p{
     }
 
     .section-nosotros div h2{
-        font-size: 35px;
+        font-size: 27px;
     }
 
     .section-nosotros div p{
@@ -996,6 +1012,14 @@ footer p{
         font-size: 30px;
     }
 
+    .section-contacto{
+        font-size: 22px;
+    }
+
+    .section-contacto div h3{
+        font-size: 24px;
+    }
+
     body footer div .logo-footer{
         width: 60px;
         margin: 10px;
@@ -1048,6 +1072,14 @@ footer p{
         cursor: crosshair;
         height: 500px;
         width: 550px;
+    }
+
+    .section-nosotros div h2{
+        font-size: 25px;
+    }
+
+    .section-nosotros div p{
+        font-size: 23px;
     }
 
     footer{
@@ -1152,11 +1184,19 @@ footer p{
     }
 
     .section-nosotros div h2{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .section-nosotros div p{
+        font-size: 22px;
+    }
+
+    .section-contacto{
         font-size: 20px;
+    }
+
+    .section-contacto div h3{
+        font-size: 22px;
     }
 }
 
@@ -1249,6 +1289,14 @@ footer p{
 
     .section-contacto h3{
         font-size: 25px;
+    }
+
+    .section-nosotros div h2{
+        font-size: 22px;
+    }
+
+    .section-nosotros div p{
+        font-size: 18px;
     }
 
     footer p{
@@ -1392,11 +1440,19 @@ footer p{
     }
 
     .section-nosotros div h2{
-        font-size: 25px;
+        font-size: 19px;
     }
 
     .section-nosotros div p{
+        font-size: 17px;
+    }
+
+    .section-contacto{
         font-size: 18px;
+    }
+
+    .section-contacto div h3{
+        font-size: 20px;
     }
 
     footer{
