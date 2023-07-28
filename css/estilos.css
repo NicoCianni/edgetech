@@ -1,0 +1,41 @@
+body {
+  background: rgba(3, 3, 3, 0.884); }
+
+header {
+  width: 100%;
+  background: #909090;
+  background: linear-gradient(184deg, #909090 0%, #000000 80%);
+  background: -webkit-linear-gradient(184deg, #909090 0%, #000000 80%);
+  background: -moz-linear-gradient(184deg, #909090 0%, #000000 80%);
+  padding: 20px 15px 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+  header div {
+    display: flex;
+    justify-content: left;
+    align-items: flex-end; }
+    header div img .logo {
+      padding-left: 15px;
+      width: 120px; }
+    header div h1 {
+      padding-left: 15px;
+      color: blanchedalmond;
+      text-decoration: underline;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 55px;
+      font-weight: bolder; }
+  header nav ul {
+    list-style: none;
+    display: flex; }
+    header nav ul li {
+      font-size: 18px;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: bolder;
+      margin-left: 25px; }
+      header nav ul li a {
+        color: blanchedalmond;
+        text-decoration: none; }
+        header nav ul li a .carrito {
+          width: 60px;
+          padding-right: 20px; }
