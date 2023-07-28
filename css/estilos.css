@@ -15,7 +15,7 @@ header {
     display: flex;
     justify-content: left;
     align-items: flex-end; }
-    header div img .logo {
+    header div .logo {
       padding-left: 15px;
       width: 120px; }
     header div h1 {
