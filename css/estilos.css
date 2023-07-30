@@ -1,51 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+/*-----------RESET--------*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
 body {
   background: rgba(3, 3, 3, 0.884); }
 
-header {
+.carousel-item {
+  transition: 1s ease, 1s ease-out; }
+
+header nav {
   width: 100%;
-  background: #909090;
   background: linear-gradient(184deg, #909090 0%, #000000 80%);
   background: -webkit-linear-gradient(184deg, #909090 0%, #000000 80%);
-  background: -moz-linear-gradient(184deg, #909090 0%, #000000 80%);
-  padding: 20px 15px 20px 15px;
+  background: -moz-linear-gradient(184deg, #909090 0%, #000000 80%); }
+  header nav div .logo {
+    padding-left: 10px;
+    width: 120px; }
+  header nav div .navbar-brand {
+    font-size: 60px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700; }
+  header nav div ul li {
+    font-size: 17px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bolder;
+    color: blanchedalmond;
+    margin-left: 25px; }
+    header nav div ul li:hover {
+      cursor: pointer;
+      transform: scale(1.2) skew(-1deg);
+      -webkit-transform: scale(1.2) skew(-1deg);
+      -moz-transform: scale(1.2) skew(-1deg); }
+    header nav div ul li .carrito {
+      width: 60px;
+      padding-right: 20px;
+      display: flex; }
+
+footer {
+  background-color: #93B7BE;
   display: flex;
   justify-content: space-between;
   align-items: flex-end; }
-  header div {
-    display: flex;
-    justify-content: left;
-    align-items: flex-end; }
-    header div .logo {
-      padding-left: 15px;
-      width: 120px; }
-    header div h1 {
-      padding-left: 15px;
-      color: blanchedalmond;
-      text-decoration: underline;
-      font-family: 'Noto Sans JP', sans-serif;
-      font-size: 55px;
-      font-weight: bolder; }
-  header nav ul {
-    list-style: none;
-    display: flex; }
-    header nav ul li {
-      font-size: 18px;
-      font-family: 'Noto Sans JP', sans-serif;
-      font-weight: bolder;
-      margin-left: 25px; }
-      header nav ul li:hover {
-        cursor: pointer;
-        transform: scale(1.2) skew(-1deg);
-        -webkit-transform: scale(1.2) skew(-1deg);
-        -moz-transform: scale(1.2) skew(-1deg); }
-      header nav ul li a {
-        color: blanchedalmond;
-        text-decoration: none; }
-        header nav ul li a:hover {
-          color: #0cb7ce; }
-        header nav ul li a .carrito {
-          width: 60px;
-          padding-right: 20px; }
+  footer div .logo-footer {
+    width: 100px;
+    margin: 30px; }
+  footer div .sponsor-uno {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 35px;
+    margin-left: 40px; }
+  footer div .sponsor {
+    width: 130px;
+    height: 40px;
+    margin-bottom: 50px;
+    margin-left: 40px; }
+  footer .socials-block .socials {
+    width: 70px;
+    height: 50px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    margin-left: 30px; }
+  footer .socials-block p {
+    text-align: right;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+    font-weight: bold; }
 
 main .hero {
   display: flex;
@@ -228,7 +250,7 @@ main div .carousel-item {
       width: 250px;
       filter: contrast(120%); }
 
-main .intro-productos {
+.intro-productos {
   color: antiquewhite;
   text-align: center;
   text-shadow: 3px 0 #0A0903;
@@ -243,7 +265,7 @@ main .intro-productos {
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
-main section .titulo-producto {
+section .titulo-producto {
   color: #161515;
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 40px;
@@ -257,116 +279,708 @@ main section .titulo-producto {
   background: -moz-linear-gradient(8deg, #000000 0%, #cba408 80%);
   margin: 1px; }
 
-main .producto-grid1 {
+.producto-grid1 {
   display: grid;
   place-items: center;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(5, 1fr); }
-  main .producto-grid1 .producto {
-    margin: 20px;
-    color: whitesmoke;
+
+.producto-grid2 {
+  display: grid;
+  place-items: center;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(5, 1fr); }
+
+.producto-grid3 {
+  display: grid;
+  place-items: center;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(5, 1fr); }
+
+.producto-grid4 {
+  display: grid;
+  place-items: center;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(5, 1fr); }
+
+.producto-grid5 {
+  display: grid;
+  place-items: center;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr); }
+
+.producto {
+  margin: 20px;
+  color: whitesmoke;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 5px inset #b8b433;
+  font-size: 20px;
+  width: 320px;
+  height: 390px;
+  text-align: center;
+  padding: 5px;
+  background-color: #000000a1;
+  box-shadow: 21px 20px 39px 1px rgba(0, 0, 0, 0.89);
+  -webkit-box-shadow: 21px 20px 39px 1px rgba(0, 0, 0, 0.89);
+  -moz-box-shadow: 21px 20px 39px 1px rgba(0, 0, 0, 0.89); }
+  .producto img {
+    width: 230px;
+    height: 210px;
+    padding: 5px; }
+  .producto h4 {
+    font-size: 22px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: 5px inset #b8b433;
-    font-size: 20px;
-    width: 320px;
-    height: 390px;
+    font-weight: bolder; }
+  .producto p {
+    color: #f3db08f3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: bolder;
+    padding-bottom: 5px; }
+  .producto .boton1-producto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
     text-align: center;
-    padding: 5px;
-    background-color: #000000a1;
-    box-shadow: 21px 20px 39px 1px rgba(0, 0, 0, 0.89);
-    -webkit-box-shadow: 21px 20px 39px 1px rgba(0, 0, 0, 0.89);
-    -moz-box-shadow: 21px 20px 39px 1px rgba(0, 0, 0, 0.89); }
-    main .producto-grid1 .producto img {
-      width: 230px;
-      height: 210px;
-      padding: 5px; }
-    main .producto-grid1 .producto h4 {
-      font-size: 22px;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+    padding: 7px;
+    text-decoration: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: rgba(43, 212, 170, 0.822); }
+  .producto .boton2-producto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    text-align: center;
+    margin: 5px;
+    padding: 7px;
+    text-decoration: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: rgba(233, 229, 11, 0.849); }
+
+main .section-contacto {
+  height: calc(100vh - 159.06px);
+  color: white;
+  text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.9);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 30px;
+  background-image: url(../img/set-up-armado.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  main .section-contacto div {
+    margin: 20px; }
+    main .section-contacto div h3 {
+      text-align: center;
+      text-shadow: 2px solid #0A0903;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: bolder;
+      font-size: 30px; }
+    main .section-contacto div label {
       font-weight: bolder; }
-    main .producto-grid1 .producto p {
-      color: #f3db08f3;
+
+.section-nosotros {
+  color: bisque;
+  height: calc(100vh - 144.17px);
+  text-align: center;
+  background-image: url(../img/fondo-cibernetico.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  .section-nosotros div h2 {
+    font-size: 60px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bolder;
+    text-decoration: underline;
+    padding-top: 10px;
+    color: #f3db08f3;
+    text-shadow: 10px 0 black; }
+  .section-nosotros div p {
+    font-size: 34px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 25px;
+    margin: 30px;
+    color: #eee062f3;
+    text-shadow: 5px 0 black; }
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 15px;
+  margin: 5px; }
+  .servicios-grid .reparaciones {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: calc(100vh - 159.06px);
+    background-image: url(../img/reparaciones.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid white; }
+  .servicios-grid h3 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    border: 2px solid white;
+    background-color: white;
+    padding: 7px;
+    border-radius: 15px; }
+  .servicios-grid a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 15px; }
+  .servicios-grid .tecnico-on {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: calc(100vh - 159.06px);
+    background-image: url(../img/soporte.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid white; }
+    .servicios-grid .tecnico-on h3 {
+      text-align: center;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 13px;
+      font-size: 40px;
       font-weight: bolder;
-      padding-bottom: 5px; }
-    main .producto-grid1 .producto .boton1-producto {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: whitesmoke;
-      text-align: center;
-      margin: 5px;
+      border: 2px solid white;
+      background-color: white;
       padding: 7px;
+      border-radius: 15px; }
+    .servicios-grid .tecnico-on a {
       text-decoration: none;
-      font-family: 'Noto Sans JP', sans-serif;
-      font-size: 16px;
-      font-weight: bolder;
-      background-color: rgba(43, 212, 170, 0.822); }
-    main .producto-grid1 .producto .boton2-producto {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: whitesmoke;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 35px;
+      border: 1px solid black;
+      background-color: black;
+      color: white;
+      padding: 10px;
+      border-radius: 15px; }
+  .servicios-grid .cadeteria {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: calc(100vh - 159.06px);
+    background-image: url(../img/cadeteria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid white; }
+    .servicios-grid .cadeteria h3 {
       text-align: center;
-      margin: 5px;
-      padding: 7px;
-      text-decoration: none;
-      font-family: 'Noto Sans JP', sans-serif;
-      font-size: 16px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 40px;
       font-weight: bolder;
-      background-color: rgba(233, 229, 11, 0.849); }
+      border: 2px solid white;
+      background-color: white;
+      padding: 7px;
+      border-radius: 15px; }
+    .servicios-grid .cadeteria a {
+      text-decoration: none;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 35px;
+      border: 1px solid black;
+      background-color: black;
+      color: white;
+      padding: 10px;
+      border-radius: 15px; }
 
-main .producto-grid2 {
-  display: grid;
-  place-items: center;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(5, 1fr); }
+@media screen and (max-width: 1585px) {
+  .producto-grid1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr); }
+  .producto-grid2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr); }
+  .producto-grid3 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr); }
+  .producto-grid4 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr); }
+  .producto-grid5 {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); }
+  .section-nosotros div h2 {
+    font-size: 35px; }
+  .section-nosotros div p {
+    font-size: 30px; } }
 
-main .producto-grid3 {
-  display: grid;
-  place-items: center;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(5, 1fr); }
+@media screen and (max-width: 1450px) {
+  main .hero div h2 {
+    font-size: 60px; }
+  main .hero div p {
+    font-size: 30px; }
+  main .video-elite h2 {
+    font-size: 60px; }
+  .section-nosotros div h2 {
+    font-size: 30px; }
+  .section-nosotros div p {
+    font-size: 30px; } }
 
-main .producto-grid4 {
-  display: grid;
-  place-items: center;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(5, 1fr); }
+@media screen and (max-width: 1320px) {
+  .servicios-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr); }
+  .reparaciones {
+    height: 400px; }
+  .tecnico-on {
+    height: 400px; }
+  .cadeteria {
+    height: 400px; }
+  .section-nosotros div h2 {
+    font-size: 32px; }
+  .section-nosotros div p {
+    font-size: 30px; } }
 
-main .producto-grid5 {
-  display: grid;
-  place-items: center;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: repeat(5, 1fr); }
-
-footer {
-  background-color: #93B7BE;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end; }
-  footer div .logo-footer {
-    width: 100px;
-    margin: 30px; }
-  footer div .sponsor-uno {
+@media screen and (max-width: 1230px) {
+  header nav div .logo {
+    padding-left: 10px;
+    width: 100px; }
+  header nav div .navbar-brand {
+    font-size: 50px;
+    font-weight: 600; }
+  header nav div ul li {
+    font-size: 15px;
+    margin-left: 15px; }
+  header nav div .carrito {
+    width: 40px;
+    padding-right: 12px; }
+  section .titulo-producto {
+    font-size: 40px; }
+  .intro-productos {
+    font-size: 60px; }
+  .producto {
+    width: 300px;
+    height: 370px;
+    margin: 18px; }
+  .producto .boton1-producto {
+    font-size: 12px;
+    margin: 4px;
+    padding: 5px; }
+  .producto .boton2-producto {
+    font-size: 12px;
+    margin: 4px;
+    padding: 5px; }
+  main .hero div h2 {
+    font-size: 50px; }
+  main .hero div p {
+    font-size: 20px; }
+  main .video-elite h2 {
+    font-size: 45px; }
+  main .tecno h4 {
+    font-size: 20px; }
+  body footer div .logo-footer {
     width: 80px;
-    height: 80px;
+    margin: 20px; }
+  body footer div .sponsor {
+    width: 110px;
+    height: 25px;
     margin-bottom: 35px;
-    margin-left: 40px; }
-  footer div .sponsor {
-    width: 130px;
-    height: 40px;
-    margin-bottom: 50px;
-    margin-left: 40px; }
+    margin-left: 30px; }
+  body footer div .sponsor-uno {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 30px;
+    margin-left: 35px; }
   footer .socials-block .socials {
-    width: 70px;
-    height: 50px;
+    width: 60px;
+    height: 40px;
     padding-left: 20px;
     margin-bottom: 25px;
     margin-left: 30px; }
+  .section-nosotros div h2 {
+    font-size: 29px; }
+  .section-nosotros div p {
+    font-size: 28px; } }
+
+@media screen and (max-width: 1000px) {
+  .intro-productos {
+    font-size: 55px; }
+  section .titulo-producto {
+    font-size: 35px; }
+  .producto {
+    width: 300px;
+    height: 370px; }
+  .producto p {
+    font-size: 11px; }
+  .producto-grid1 {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr); }
+  .producto-grid2 {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); }
+  .producto-grid3 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr); }
+  .producto-grid4 {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr); }
+  .producto-grid5 {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr); }
+  .section-nosotros div h2 {
+    font-size: 27px; }
+  .section-nosotros div p {
+    font-size: 25px; } }
+
+@media screen and (max-width: 890px) {
+  .navbar-brand {
+    font-size: 50px; }
+  .logo {
+    padding-left: 5px;
+    width: 80px;
+    padding-bottom: 10px; }
+  main .producto-main .destacado {
+    font-size: 50px;
+    padding: 7px; }
+  .intro-productos {
+    font-size: 50px; }
+  .titulo-producto {
+    font-size: 25px; }
+  main .producto-main .ingresos {
+    font-size: 40px;
+    padding: 7px; }
+  main .tecno div {
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center; }
+  main .tecno div img {
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 1;
+    width: 90%;
+    height: 100px; }
+  main .tecno h2 {
+    font-size: 40px;
+    padding: 7px; }
+  main .tecno h4 {
+    font-size: 18px; }
+  main .tecno div img:hover {
+    cursor: crosshair;
+    height: 600px;
+    width: 650px; }
+  main .video-elite h2 {
+    font-size: 30px; }
+  .reparaciones h3 {
+    font-size: 35px; }
+  .reparaciones a {
+    font-size: 30px; }
+  .tecnico-on h3 {
+    font-size: 35px; }
+  .tecnico-on a {
+    font-size: 30px; }
+  .cadeteria h3 {
+    font-size: 35px; }
+  .cadeteria a {
+    font-size: 30px; }
+  .section-contacto {
+    font-size: 22px; }
+  .section-contacto div h3 {
+    font-size: 24px; }
+  body footer div .logo-footer {
+    width: 60px;
+    margin: 10px; }
+  body footer div .sponsor {
+    width: 85px;
+    height: 18px;
+    margin-bottom: 25px;
+    margin-left: 20px; }
+  body footer div .sponsor-uno {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-left: 25px; }
+  footer .socials-block .socials {
+    width: 50px;
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    margin-left: 20px; } }
+
+@media screen and (max-width: 750px) {
+  .navbar-brand {
+    font-size: 40px; }
+  .intro-productos {
+    font-size: 40px; }
+  main .producto-main .ingresos {
+    font-size: 30px;
+    padding: 7px; }
+  main .producto-main .destacado {
+    font-size: 40px;
+    padding: 7px; }
+  main .video-elite h2 {
+    font-size: 25px; }
+  main .video-elite div div iframe {
+    width: 400px;
+    height: 280px; }
+  .tecno div img:hover {
+    cursor: crosshair;
+    height: 500px;
+    width: 550px; }
+  .section-nosotros div h2 {
+    font-size: 25px; }
+  .section-nosotros div p {
+    font-size: 23px; }
+  footer {
+    display: flex; }
+  .logo-footer {
+    display: none; }
+  .sponsor-uno {
+    display: none; }
+  .sponsor {
+    display: none; }
+  .socials-block {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; }
+  .socials {
+    width: 60px;
+    height: 45px;
+    margin-top: 30px;
+    padding-left: 15px; }
   footer .socials-block p {
-    text-align: right;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 12px;
+    padding: 20px;
+    text-align: center; } }
+
+@media screen and (max-width: 670px) {
+  section .titulo-producto {
+    font-size: 25px; }
+  .producto-grid1 {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr; }
+  .producto-grid2 {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr; }
+  .producto-grid3 {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr; }
+  .producto-grid4 {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr; }
+  .producto-grid5 {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr; }
+  .tecno div img:hover {
+    cursor: crosshair;
+    height: 300px;
+    width: 350px; }
+  .reparaciones h3 {
+    font-size: 30px; }
+  .reparaciones a {
+    font-size: 25px; }
+  .tecnico-on h3 {
+    font-size: 30px; }
+  .tecnico-on a {
+    font-size: 25px; }
+  .cadeteria h3 {
+    font-size: 30px; }
+  .cadeteria a {
+    font-size: 25px; }
+  .section-nosotros div h2 {
+    font-size: 25px; }
+  .section-nosotros div p {
+    font-size: 22px; }
+  .section-contacto {
+    font-size: 20px; }
+  .section-contacto div h3 {
+    font-size: 22px; } }
+
+@media screen and (max-width: 530px) {
+  header nav div .logo {
+    padding-left: 10px;
+    width: 70px; }
+  .carrito {
+    width: 25px;
+    padding-right: 10px; }
+  header nav div .navbar-brand {
+    font-size: 35px;
+    font-weight: 600; }
+  header nav ul li {
+    font-size: 11px;
+    margin-left: 15px; }
+  main .hero div h2 {
+    font-size: 35px; }
+  main .hero div p {
+    font-size: 12px; }
+  .intro-productos {
+    font-size: 30px; }
+  main .video-elite div div iframe {
+    width: 275px;
+    height: 180px; }
+  main .producto-main .ingresos {
+    font-size: 20px;
+    padding: 7px; }
+  main .tecno h2 {
+    font-size: 30px;
+    padding: 7px; }
+  main .tecno h4 {
+    font-size: 15px; }
+  main .tecno div img:hover {
+    cursor: crosshair;
+    height: 250px;
+    width: 270px; }
+  main .producto-main .destacado {
+    font-size: 35px;
+    padding: 7px; }
+  .reparaciones h3 {
+    font-size: 20px; }
+  .reparaciones a {
+    font-size: 15px; }
+  .tecnico-on h3 {
+    font-size: 20px; }
+  .tecnico-on a {
+    font-size: 15px; }
+  .cadeteria h3 {
+    font-size: 20px; }
+  .cadeteria a {
+    font-size: 15px; }
+  .section-contacto {
+    font-size: 20px; }
+  .section-contacto h3 {
+    font-size: 25px; }
+  .section-nosotros div h2 {
+    font-size: 22px; }
+  .section-nosotros div p {
+    font-size: 18px; }
+  footer p {
+    font-size: 8px;
+    padding: 30px;
+    text-align: center; } }
+
+@media screen and (max-width: 435px) {
+  .carrito {
+    display: none; } }
+
+@media screen and (max-width: 420px) {
+  .logo {
+    padding-left: 10px;
+    width: 80px; }
+  header h1 {
+    padding-left: 10px;
+    font-size: 40px; }
+  header nav ul li {
+    text-align: center;
     font-size: 15px;
-    font-weight: bold; }
+    margin-left: 5px;
+    padding-left: 3px; }
+  main .hero p {
+    display: none; }
+  section .titulo-producto {
+    font-size: 20px; }
+  .intro-productos {
+    font-size: 20px; }
+  .producto-flex div {
+    font-size: 15px;
+    width: 300px;
+    height: 395px;
+    margin: 15px; }
+  .boton1 {
+    font-size: 10px;
+    margin: 5px;
+    padding: 7px; }
+  .boton2 {
+    font-size: 10px;
+    margin: 5px;
+    padding: 7px; }
+  .producto {
+    width: 270px;
+    height: 330px; }
+  .producto img {
+    width: 200px;
+    height: 180px;
+    padding: 3px; }
+  .producto p {
+    font-size: 10px; }
+  .boton1-producto {
+    font-size: 10px;
+    padding: 5px; }
+  .boton2-producto {
+    font-size: 10px;
+    padding: 5px; }
+  main .video-elite h2 {
+    display: none; }
+  main .video-elite div a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 1px solid black;
+    background-color: #0A0903;
+    border-radius: 18px;
+    margin: 20px;
+    padding: 15px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; }
+  main .tecno div img:hover {
+    cursor: crosshair;
+    height: 200px;
+    width: 250px; }
+  .reparaciones h3 {
+    font-size: 15px; }
+  .reparaciones a {
+    font-size: 15px; }
+  .tecnico-on h3 {
+    font-size: 15px; }
+  .tecnico-on a {
+    font-size: 15px; }
+  .cadeteria h3 {
+    font-size: 15px; }
+  .cadeteria a {
+    font-size: 15px; }
+  .section-nosotros div h2 {
+    font-size: 19px; }
+  .section-nosotros div p {
+    font-size: 17px; }
+  .section-contacto {
+    font-size: 18px; }
+  .section-contacto div h3 {
+    font-size: 20px; }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; } }
