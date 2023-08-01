@@ -39,36 +39,6 @@ header nav {
       padding-right: 20px;
       display: flex; }
 
-footer {
-  background-color: #93B7BE;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end; }
-  footer div .logo-footer {
-    width: 100px;
-    margin: 30px; }
-  footer div .sponsor-uno {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 35px;
-    margin-left: 40px; }
-  footer div .sponsor {
-    width: 130px;
-    height: 40px;
-    margin-bottom: 50px;
-    margin-left: 40px; }
-  footer .socials-block .socials {
-    width: 70px;
-    height: 50px;
-    padding-left: 20px;
-    margin-bottom: 25px;
-    margin-left: 30px; }
-  footer .socials-block p {
-    text-align: right;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 15px;
-    font-weight: bold; }
-
 main .hero {
   display: flex;
   justify-content: center;
@@ -508,6 +478,36 @@ main .section-contacto {
       color: white;
       padding: 10px;
       border-radius: 15px; }
+
+footer {
+  background-color: #93B7BE;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+  footer div .logo-footer {
+    width: 100px;
+    margin: 30px; }
+  footer div .sponsor-uno {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 35px;
+    margin-left: 40px; }
+  footer div .sponsor {
+    width: 130px;
+    height: 40px;
+    margin-bottom: 50px;
+    margin-left: 40px; }
+  footer .socials-block .socials {
+    width: 70px;
+    height: 50px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    margin-left: 30px; }
+  footer .socials-block p {
+    text-align: right;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+    font-weight: bold; }
 
 @media screen and (max-width: 1585px) {
   .producto-grid1 {
