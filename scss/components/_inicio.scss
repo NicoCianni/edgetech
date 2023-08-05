@@ -3,7 +3,7 @@ main{
         display: flex;
         justify-content: center;
         align-items: center;
-        color: bisque;
+        color: nth($paleta-colores, 3);
         width: 100%;
         height: calc(100vh - 144.17px - 97px);
         background-image: url(../img/fondo-cibernetico.jpg);
@@ -15,18 +15,18 @@ main{
             h2{
                 text-align: center;
                 padding: 20px;
-                text-shadow: 5px 0 #0A0903;
+                text-shadow: 5px 0 nth($paleta-colores, 11);
                 font-size: 90px;
-                font-family: 'Noto Sans JP', sans-serif;
+                font-family: $primary-font-family;
                 font-weight: bold;
                 span{
-                    color: rgb(240, 236, 27);
+                    color: nth($paleta-colores, 8);
                 }
             }
             p{
                 text-align: center;
                 font-size: 50px;
-                font-family: 'Noto Sans JP', sans-serif;
+                font-family: $primary-font-family;
                 font-weight: lighter;
                 padding-top: 40px;
             }
@@ -35,13 +35,13 @@ main{
     .producto-main{
         .destacado{
             color: rgb(13, 14, 14);
-            font-family: 'Noto Sans JP', sans-serif;
+            font-family: $primary-font-family;
             font-size: 60px;
             font-weight: bolder;
             border: 3px solid rgba(230,184,38,0.10);
             padding: 10px;
             text-align: center;
-            background: #000000;
+            background: nth($paleta-colores, 11);
             background: linear-gradient(8deg,#000000 0%, #cba408 80%);
             background: -webkit-linear-gradient(8deg,#000000 0%, #cba408 80%);
             background: -moz-linear-gradient(8deg,#000000 0%, #cba408 80%);
@@ -54,10 +54,10 @@ main{
             flex-wrap: wrap;
             div{
                 margin: 30px;
-                border: 6px inset #2d9899;
+                border: 6px inset nth($paleta-colores, 4);
                 width: 330px;
                 height: 415px;
-                background-color: #000000a1;
+                background-color: nth($paleta-colores, 11);
                 box-shadow: 21px 20px 39px 1px rgba(0,0,0,0.89);
                 -webkit-box-shadow: 21px 20px 39px 1px rgba(0,0,0,0.89);
                 -moz-box-shadow: 21px 20px 39px 1px rgba(0,0,0,0.89);
@@ -72,11 +72,11 @@ main{
                     font-size: 20px;
                     color: whitesmoke;
                     font-weight: bolder;
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-family: $secondary-font-family;
                 }
                 p{
-                    color: #f3db08f3;
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    color: nth($paleta-colores, 8);
+                    font-family: $secondary-font-family;
                     font-size: 18px;
                     font-weight: bold;
                     margin-bottom: 20px;
@@ -90,10 +90,10 @@ main{
                     margin: 5px;
                     padding: 7px;
                     text-decoration: none;
-                    font-family: 'Noto Sans JP', sans-serif;
+                    font-family: $primary-font-family;
                     font-size: 16px;
                     font-weight: bolder;
-                    background-color: rgba(43, 212, 170, 0.822);
+                    background-color: nth($paleta-colores, 7);
                 }
                 .boton2{
                     display: flex;
@@ -104,10 +104,10 @@ main{
                     margin: 5px;
                     padding: 7px;
                     text-decoration: none;
-                    font-family: 'Noto Sans JP', sans-serif;
+                    font-family: $primary-font-family;
                     font-size: 16px;
                     font-weight: bolder;
-                    background-color: rgba(233, 229, 11, 0.849);
+                    background-color: nth($paleta-colores, 8);
                 }
             }
         }
@@ -124,9 +124,9 @@ main{
         padding-bottom: 30px;
         h2{
             color: azure;
-            text-shadow: 8px 0 #0A0903;
+            text-shadow: 8px 0 nth($paleta-colores, 11);
             font-size: 70px;
-            font-family: 'Noto Sans JP', sans-serif;
+            font-family: $primary-font-family;
             font-weight: bolder;
             font-style: normal;
             margin-bottom: 10px;
@@ -141,7 +141,7 @@ main{
     }
     .producto-main .ingresos{
         color: rgb(22, 21, 21);
-        font-family: 'Noto Sans JP', sans-serif;
+        font-family: $primary-font-family;
         font-size: 60px;
         font-weight: bolder;
         border: 3px solid rgba(230,184,38,0.10);
@@ -156,7 +156,7 @@ main{
     .tecno{
         h2{
             color: rgb(22, 21, 21);
-            font-family: 'Noto Sans JP', sans-serif;
+            font-family: $primary-font-family;
             font-size: 60px;
             font-weight: bolder;
             border: 3px solid rgba(230,184,38,0.10);
@@ -169,11 +169,11 @@ main{
             margin: 0px;
         }
         h4{
-            color: #f3db08f3;
-            background-color: #0A0903;
+            color: nth($paleta-colores, 5);
+            background-color: nth($paleta-colores, 11);
             padding: 20px;
             text-align: center;
-            font-family: 'Noto Sans JP', sans-serif;
+            font-family: $primary-font-family;
             font-weight: bold;
             font-style: normal;
             font-size: 25px;

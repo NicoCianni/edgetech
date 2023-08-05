@@ -9,7 +9,7 @@
 }
 
 body{
-    background: rgba(3, 3, 3, 0.884);
+    background: nth($paleta-colores, 1);
 }
 
 .carousel-item{

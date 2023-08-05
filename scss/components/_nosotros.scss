@@ -1,5 +1,5 @@
 .section-nosotros{
-    color: bisque;
+    color: nth($paleta-colores, 3);
     height: calc(100vh - 144.17px);
     text-align: center;
     background-image: url(../img/fondo-cibernetico.jpg);
@@ -10,22 +10,22 @@
     div{
         h2{
             font-size: 60px;
-            font-family: 'Noto Sans JP', sans-serif;
+            font-family: $primary-font-family;
             font-weight: bolder;
             text-decoration: underline;
             padding-top: 25px;
-            color: #f3db08f3;
-            text-shadow: 10px 0 black;
+            color: nth($paleta-colores, 5);
+            text-shadow: 10px 0 nth($paleta-colores, 11);
         }
         p{
             font-size: 34px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: $secondary-font-family;
             font-weight: bold;
             font-style: italic;
             padding-top: 25px;
             margin: 30px;
-            color: #eee062f3;
-            text-shadow: 5px 0 black;
+            color:nth($paleta-colores, 10);
+            text-shadow: 5px 0 nth($paleta-colores, 11);
         }
     }
 }

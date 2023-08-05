@@ -1,8 +1,8 @@
 main{
     .section-contacto{
         height: calc(100vh - 159.06px);
-        color:white;
-        text-shadow: 0px 0px 12px rgba(0,0,0,0.9);
+        color: nth($paleta-colores, 9);
+        text-shadow: 0px 0px 12px nth($paleta-colores, 13);
         font-family: 'Noto Sans JP', sans-serif;
         font-size: 25px;
         text-align: center;
@@ -16,7 +16,7 @@ main{
             margin: 20px;
             h3{
                 text-align: center;
-                text-shadow: 2px solid #0A0903;
+                text-shadow: 2px solid nth($paleta-colores, 11);
                 font-family: 'Noto Sans JP', sans-serif;
                 font-weight: bolder;
                 font-size: 30px;
@@ -26,5 +26,4 @@ main{
             }
         }
     }
-    
 }

@@ -1,9 +1,9 @@
 .intro-productos{
     color: antiquewhite;
     text-align: center;
-    text-shadow: 3px 0 #0A0903;
+    text-shadow: 3px 0 nth($paleta-colores, 11);
     font-size: 70px;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: $primary-font-family;
     font-weight: bold;
     margin: 40px;
     padding: 5px;
@@ -17,13 +17,13 @@
 section{
     .titulo-producto{
         color: rgb(22, 21, 21);
-        font-family: 'Noto Sans JP', sans-serif;
+        font-family: $primary-font-family;
         font-size: 40px;
         font-weight: bolder;
         border: 3px solid rgba(230,184,38,0.10);
         padding: 10px;
         text-align: center;
-        background: #000000;
+        background: nth($paleta-colores, 11);
         background: linear-gradient(8deg,#000000 0%, #cba408 80%);
         background: -webkit-linear-gradient(8deg,#000000 0%, #cba408 80%);
         background: -moz-linear-gradient(8deg,#000000 0%, #cba408 80%);
@@ -68,15 +68,15 @@ section{
 
 .producto{
     margin: 20px;
-    color: whitesmoke;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: 5px inset #b8b433;
+    color: nth($paleta-colores, 3);
+    font-family: $secondary-font-family;
+    border: 5px inset nth($paleta-colores, 5);
     font-size: 20px;
     width: 320px;
     height: 390px;
     text-align: center;
     padding: 5px;
-    background-color: #000000a1;
+    background-color: nth($paleta-colores, 11);
     box-shadow: 21px 20px 39px 1px rgba(0,0,0,0.89);
     -webkit-box-shadow: 21px 20px 39px 1px rgba(0,0,0,0.89);
     -moz-box-shadow: 21px 20px 39px 1px rgba(0,0,0,0.89);
@@ -87,12 +87,12 @@ section{
     }
     h4{
         font-size: 22px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: $secondary-font-family;
         font-weight: bolder;
     }
     p{
-        color: #f3db08f3;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: nth($paleta-colores, 8);
+        font-family: $secondary-font-family;
         font-size: 13px;
         font-weight: bolder;
         padding-bottom: 5px;
@@ -101,15 +101,15 @@ section{
         display: flex;
         justify-content: center;
         align-items: center;
-        color: whitesmoke;
+        color: nth($paleta-colores, 9);
         text-align: center;
         margin: 5px;
         padding: 7px;
         text-decoration: none;
-        font-family: 'Noto Sans JP', sans-serif;
+        font-family: $primary-font-family;
         font-size: 16px;
         font-weight: bolder;
-        background-color: rgba(43, 212, 170, 0.822);
+        background-color: nth($paleta-colores, 7);
     }
     .boton2-producto{
         display: flex;
@@ -120,9 +120,9 @@ section{
         margin: 5px;
         padding: 7px;
         text-decoration: none;
-        font-family: 'Noto Sans JP', sans-serif;
+        font-family: $primary-font-family;
         font-size: 16px;
         font-weight: bolder;
-        background-color: rgba(233, 229, 11, 0.849);
+        background-color: nth($paleta-colores, 8);
     }
 }

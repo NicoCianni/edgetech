@@ -11,7 +11,7 @@ header{
             }
             .navbar-brand{
                 font-size: 60px;
-                font-family: 'Noto Sans JP', sans-serif;
+                font-family: $primary-font-family;
                 font-weight: 700;
             }
         }
@@ -19,9 +19,9 @@ header{
             ul{
                 li{
                     font-size: 17px;
-                    font-family: 'Noto Sans JP', sans-serif;
+                    font-family: $primary-font-family;
                     font-weight: bolder;
-                    color: blanchedalmond;
+                    color: nth($paleta-colores, 3);
                     margin-left: 25px;
                     &:hover{
                         cursor: pointer;
