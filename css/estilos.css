@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+main .hero, main .video-elite, .intro-productos, main .section-contacto, .section-nosotros {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.producto-grid2, .producto-grid3, .producto-grid4 {
+  display: grid;
+  place-items: center;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(5, 1fr); }
+
 /*-----------RESET--------*/
 * {
   margin: 0px;
@@ -46,11 +58,7 @@ main .hero {
   color: blanchedalmond;
   width: 100%;
   height: calc(100vh - 144.17px - 97px);
-  background-image: url(../img/fondo-cibernetico.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-image: url(../img/fondo-cibernetico.jpg); }
   main .hero div h2 {
     text-align: center;
     padding: 20px;
@@ -143,10 +151,6 @@ main .video-elite {
   text-align: center;
   width: 100%;
   background-image: url(../img/fondo-cibernetico.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   padding-top: 20px;
   padding-bottom: 30px; }
   main .video-elite h2 {
@@ -229,11 +233,7 @@ main div .carousel-item {
   font-weight: bold;
   margin: 40px;
   padding: 5px;
-  background-image: url(../img/mouse-imagen-novedad-kone-xp.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-image: url(../img/mouse-imagen-novedad-kone-xp.jpg); }
 
 section .titulo-producto {
   color: #161515;
@@ -253,24 +253,6 @@ section .titulo-producto {
   display: grid;
   place-items: center;
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: repeat(5, 1fr); }
-
-.producto-grid2 {
-  display: grid;
-  place-items: center;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(5, 1fr); }
-
-.producto-grid3 {
-  display: grid;
-  place-items: center;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(5, 1fr); }
-
-.producto-grid4 {
-  display: grid;
-  place-items: center;
-  grid-template-rows: 1fr;
   grid-template-columns: repeat(5, 1fr); }
 
 .producto-grid5 {
@@ -342,11 +324,7 @@ main .section-contacto {
   font-size: 25px;
   text-align: center;
   padding-top: 30px;
-  background-image: url(../img/set-up-armado.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-image: url(../img/set-up-armado.jpg); }
   main .section-contacto div {
     margin: 20px; }
     main .section-contacto div h3 {
@@ -362,11 +340,7 @@ main .section-contacto {
   color: blanchedalmond;
   height: calc(100vh - 144.17px);
   text-align: center;
-  background-image: url(../img/fondo-cibernetico.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-image: url(../img/fondo-cibernetico.jpg); }
   .section-nosotros div h2 {
     font-size: 60px;
     font-family: "Noto Sans JP", sans-serif;

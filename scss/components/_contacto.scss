@@ -8,10 +8,7 @@ main{
         text-align: center;
         padding-top: 30px;
         background-image: url(../img/set-up-armado.jpg);
-        background-position: center; 
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        @extend %background;
         div{
             margin: 20px;
             h3{

@@ -8,10 +8,7 @@
     margin: 40px;
     padding: 5px;
     background-image: url(../img/mouse-imagen-novedad-kone-xp.jpg);
-    background-position: center; 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    @extend %background;
 }
 
 section{
@@ -39,24 +36,15 @@ section{
     }
 
 .producto-grid2{
-    display: grid;
-    place-items: center;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(5, 1fr);
+    @extend %grid-producto;
 }
 
 .producto-grid3{
-    display: grid;
-    place-items: center;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(5, 1fr);    
+    @extend %grid-producto;
 }
 
 .producto-grid4{
-    display: grid;
-    place-items: center;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(5, 1fr);    
+    @extend %grid-producto; 
 }
 
 .producto-grid5{
@@ -98,9 +86,7 @@ section{
         padding-bottom: 5px;
     }
     .boton1-producto{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, center, center);
         color: nth($paleta-colores, 9);
         text-align: center;
         margin: 5px;
@@ -112,9 +98,7 @@ section{
         background-color: nth($paleta-colores, 7);
     }
     .boton2-producto{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, center, center);
         color: whitesmoke;
         text-align: center;
         margin: 5px;

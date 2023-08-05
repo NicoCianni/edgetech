@@ -1,8 +1,6 @@
 footer{
     background-color: nth($paleta-colores, 12);
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    @include flex(flex, space-between, flex-end);
     div{
         .logo-footer{
             width: 100px;

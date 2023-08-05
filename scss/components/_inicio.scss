@@ -1,16 +1,11 @@
 main{
     .hero{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, center, center);
         color: nth($paleta-colores, 3);
         width: 100%;
         height: calc(100vh - 144.17px - 97px);
         background-image: url(../img/fondo-cibernetico.jpg);
-        background-position: center; 
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        @extend %background;
         div{
             h2{
                 text-align: center;
@@ -82,9 +77,7 @@ main{
                     margin-bottom: 20px;
                 }
                 .boton1{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include flex(flex, center, center);
                     color: whitesmoke;
                     text-align: center;
                     margin: 5px;
@@ -96,9 +89,7 @@ main{
                     background-color: nth($paleta-colores, 7);
                 }
                 .boton2{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include flex(flex, center, center);
                     color: whitesmoke;
                     text-align: center;
                     margin: 5px;
@@ -116,10 +107,7 @@ main{
         text-align: center;
         width: 100%;
         background-image: url(../img/fondo-cibernetico.jpg);
-        background-position: center; 
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        @extend %background;
         padding-top: 20px;
         padding-bottom: 30px;
         h2{

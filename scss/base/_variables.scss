@@ -18,4 +18,29 @@ black,
 #93B7BE,
 rgba(0,0,0,0.9);
 
+// EXTEND //
+
+%background{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+%grid-producto{
+    display: grid;
+    place-items: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+}
+// MIXING //
+
+@mixin flex($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+
 
