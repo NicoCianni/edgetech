@@ -20,6 +20,7 @@ header{
                 li{
                     font-size: 17px;
                     font-family: $primary-font-family;
+                    transition: 1s ease, 0.5s ease-out;
                     font-weight: bolder;
                     color: nth($paleta-colores, 3);
                     margin-left: 25px;
@@ -28,7 +29,7 @@ header{
                         transform: scale(1.2) skew(-1deg);
                         -webkit-transform: scale(1.2) skew(-1deg);
                         -moz-transform: scale(1.2) skew(-1deg);
-                    }
+                        }
                     .carrito{
                         width: 60px;
                         padding-right: 20px;

@@ -38,6 +38,7 @@ header nav {
   header nav div ul li {
     font-size: 17px;
     font-family: "Noto Sans JP", sans-serif;
+    transition: 1s ease, 0.5s ease-out;
     font-weight: bolder;
     color: blanchedalmond;
     margin-left: 25px; }
