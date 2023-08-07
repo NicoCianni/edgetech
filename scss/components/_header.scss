@@ -8,6 +8,10 @@ header{
             .logo{
                 padding-left: 10px;
                 width: 120px;
+                transition: 3s;
+                &:hover{
+                    transform: rotateZ(360deg);
+                }
             }
             .navbar-brand{
                 font-size: 60px;

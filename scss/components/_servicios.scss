@@ -12,15 +12,15 @@
         background-image: url(../img/reparaciones.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        border: 2px solid nth($paleta-colores, 6);
+        border: 2px solid nth($paleta-colores, 9);
     }
         h3{
             text-align: center;
             font-family: $secondary-font-family;
             font-size: 40px;
             font-weight: bolder;
-            border: 2px solid nth($paleta-colores, 6);
-            background-color:nth($paleta-colores, 6);
+            border: 2px solid nth($paleta-colores, 9);
+            background-color:nth($paleta-colores, 9);
             padding: 7px;
             border-radius: 15px;
         }
@@ -30,9 +30,13 @@
             font-size: 35px;
             border: 1px solid nth($paleta-colores, 11);
             background-color: nth($paleta-colores, 11);
-            color: nth($paleta-colores, 6);
+            color: nth($paleta-colores, 9);
             padding: 10px;
             border-radius: 15px;
+            transition-duration: 1s;
+            &:hover{
+                background-color: nth($paleta-colores, 7);
+            }
         }
     .tecnico-on{
         @include flex(flex, space-evenly, center);
@@ -42,14 +46,14 @@
         background-image: url(../img/soporte.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        border: 2px solid nth($paleta-colores, 6);
+        border: 2px solid nth($paleta-colores, 9);
         h3{
             text-align: center;
             font-family: $secondary-font-family;
             font-size: 40px;
             font-weight: bolder;
-            border: 2px solid nth($paleta-colores, 6);
-            background-color:nth($paleta-colores, 6);
+            border: 2px solid nth($paleta-colores, 9);
+            background-color:nth($paleta-colores, 9);
             padding: 7px;
             border-radius: 15px;
         }
@@ -59,9 +63,13 @@
             font-size: 35px;
             border: 1px solid nth($paleta-colores, 11);
             background-color: nth($paleta-colores, 11);
-            color: nth($paleta-colores, 6);
+            color: nth($paleta-colores, 9);
             padding: 10px;
             border-radius: 15px;
+            transition-duration: 1s;
+            &:hover{
+                background-color: nth($paleta-colores, 7);
+            }
         }
     }
     .cadeteria{
@@ -72,14 +80,14 @@
         background-image: url(../img/cadeteria.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        border: 2px solid nth($paleta-colores, 6);
+        border: 2px solid nth($paleta-colores, 9);
         h3{
             text-align: center;
             font-family: $secondary-font-family;
             font-size: 40px;
             font-weight: bolder;
-            border: 2px solid nth($paleta-colores, 6);
-            background-color:nth($paleta-colores, 6);
+            border: 2px solid nth($paleta-colores, 9);
+            background-color:nth($paleta-colores, 9);
             padding: 7px;
             border-radius: 15px;
         }
@@ -89,9 +97,13 @@
             font-size: 35px;
             border: 1px solid nth($paleta-colores, 11);
             background-color: nth($paleta-colores, 11);
-            color: nth($paleta-colores, 6);
+            color: nth($paleta-colores, 9);
             padding: 10px;
             border-radius: 15px;
+            transition-duration: 1s;
+            &:hover{
+                background-color: nth($paleta-colores, 7);
+            }
         }
     }
 }

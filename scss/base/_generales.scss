@@ -13,5 +13,11 @@ body{
 }
 
 .carousel-item{
-    transition: 1s ease, 1s ease-out
+    transition: 1s ease, 1s ease-out;
+    transition-duration: 1s;
+}
+
+.nav-item:hover{
+    background: nth($paleta-colores, 2);
+    border-radius: 15px;
 }

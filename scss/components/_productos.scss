@@ -1,5 +1,5 @@
 .intro-productos{
-    color: antiquewhite;
+    color: nth($paleta-colores, 6);
     text-align: center;
     text-shadow: 3px 0 nth($paleta-colores, 11);
     font-size: 70px;
@@ -13,7 +13,7 @@
 
 section{
     .titulo-producto{
-        color: rgb(22, 21, 21);
+        color: nth($paleta-colores, 2);
         font-family: $primary-font-family;
         font-size: 40px;
         font-weight: bolder;
@@ -96,10 +96,16 @@ section{
         font-size: 16px;
         font-weight: bolder;
         background-color: nth($paleta-colores, 7);
+        transition: 0.5s ease-in-out;
+        transition-duration: 0.5s;
+        &:hover{
+            background-color: nth($paleta-colores, 12);
+            transform: scale(1.04);
+        }
     }
     .boton2-producto{
         @include flex(flex, center, center);
-        color: whitesmoke;
+        color: nth($paleta-colores, 3);
         text-align: center;
         margin: 5px;
         padding: 7px;
@@ -108,5 +114,11 @@ section{
         font-size: 16px;
         font-weight: bolder;
         background-color: nth($paleta-colores, 8);
+        transition: 0.5s ease-in-out;
+        transition-duration: 0.5s;
+        &:hover{
+            background-color: nth($paleta-colores, 12);
+            transform: scale(1.04);
+        }
     }
 }

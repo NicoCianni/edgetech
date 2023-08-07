@@ -58,6 +58,19 @@
     .section-nosotros div p{
         font-size: 30px;
     }
+
+    main .section-contacto{
+        font-size: 16px;
+        padding-top: 22px;
+    }
+
+    main .section-contacto div h3{
+        font-size: 22px;
+    }
+
+    main .section-contacto div h4{
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width:1320px){
@@ -241,6 +254,19 @@ header nav div .navbar-brand{
     .section-nosotros div p{
         font-size: 25px;
     }
+
+    main .section-contacto{
+        font-size: 15px;
+        padding-top: 20px;
+    }
+
+    main .section-contacto div h3{
+        font-size: 20px;
+    }
+
+    main .section-contacto div h4{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width:890px) {
@@ -334,11 +360,16 @@ header nav div .navbar-brand{
     }
 
     main .section-contacto{
-        font-size: 22px;
+        font-size: 14px;
+        padding-top: 18px;
     }
 
     main .section-contacto div h3{
-        font-size: 24px;
+        font-size: 18px;
+    }
+
+    main .section-contacto div h4{
+        font-size: 18px;
     }
 
     body footer div .logo-footer{
@@ -521,12 +552,22 @@ header nav div .navbar-brand{
         font-size: 22px;
     }
 
+    main .section-contacto .form{
+        width: 70%;
+        height: 70%;
+    }
+
     main .section-contacto{
-        font-size: 20px;
+        font-size: 13px;
+        padding-top: 12px;
     }
 
     main .section-contacto div h3{
-        font-size: 22px;
+        font-size: 16px;
+    }
+
+    main .section-contacto div h4{
+        font-size: 16px;
     }
 }
 
@@ -616,14 +657,6 @@ header nav div .navbar-brand{
 
     .servicios-grid .cadeteria a{
         font-size: 20px;
-    }
-
-    main .section-contacto{
-        font-size: 20px;
-    }
-
-    main .section-contacto h3{
-        font-size: 25px;
     }
 
     .section-nosotros div h2{
@@ -779,11 +812,16 @@ header nav div .navbar-brand{
     }
 
     main .section-contacto{
-        font-size: 18px;
+        font-size: 10px;
+        padding-top: 12px;
     }
 
     main .section-contacto div h3{
-        font-size: 20px;
+        font-size: 15px;
+    }
+
+    main .section-contacto div h4{
+        font-size: 15px;
     }
 
     footer{

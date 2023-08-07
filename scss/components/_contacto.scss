@@ -1,22 +1,33 @@
 main{
     .section-contacto{
-        height: calc(100vh - 159.06px);
+        height: calc(100vh - 137.27px);
         color: nth($paleta-colores, 9);
         text-shadow: 0px 0px 12px nth($paleta-colores, 13);
         font-family: 'Noto Sans JP', sans-serif;
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
-        padding-top: 30px;
+        padding-top: 25px;
         background-image: url(../img/set-up-armado.jpg);
         @extend %background;
+        .form{
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            height: 90%;
+            border-radius: 5px;
+            border: 1px solid nth($paleta-colores, 1);
+            background-color: nth($paleta-colores, 13);
+        }
         div{
             margin: 20px;
             h3{
+                margin-top: 50px;
                 text-align: center;
                 text-shadow: 2px solid nth($paleta-colores, 11);
                 font-family: 'Noto Sans JP', sans-serif;
                 font-weight: bolder;
-                font-size: 30px;
+                font-size: 25px;
             }
             label{
                 font-weight: bolder;

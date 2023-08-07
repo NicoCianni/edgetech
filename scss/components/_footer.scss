@@ -5,6 +5,10 @@ footer{
         .logo-footer{
             width: 100px;
             margin: 30px;
+            transition: 3s;
+            &:hover{
+                transform: rotateZ(360deg);
+            }
         }
         .sponsor-uno{
             width: 80px;

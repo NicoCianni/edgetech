@@ -15,7 +15,24 @@ main{
                 font-family: $primary-font-family;
                 font-weight: bold;
                 span{
-                    color: nth($paleta-colores, 8);
+                    animation: transformation 5s forwards infinite;
+                    @keyframes transformation{
+                        0%{
+                            color: greenyellow;
+                        }
+                        25%{
+                            color: rgb(7, 207, 7);
+                        }
+                        50%{
+                            color: aqua;
+                        }
+                        75%{
+                            color:blue;
+                        }
+                        100%{
+                            color: orange;
+                        }
+                    }
                 }
             }
             p{
@@ -65,7 +82,7 @@ main{
                 }
                 h3{
                     font-size: 20px;
-                    color: whitesmoke;
+                    color: nth($paleta-colores, 6);
                     font-weight: bolder;
                     font-family: $secondary-font-family;
                 }
@@ -78,7 +95,7 @@ main{
                 }
                 .boton1{
                     @include flex(flex, center, center);
-                    color: whitesmoke;
+                    color: nth($paleta-colores, 6);
                     text-align: center;
                     margin: 5px;
                     padding: 7px;
@@ -87,6 +104,12 @@ main{
                     font-size: 16px;
                     font-weight: bolder;
                     background-color: nth($paleta-colores, 7);
+                    transition: 0.5s ease-in-out;
+                    transition-duration: 0.5s;
+                    &:hover{
+                        background-color: nth($paleta-colores, 12);
+                        transform: scale(1.04);
+                    }
                 }
                 .boton2{
                     @include flex(flex, center, center);
@@ -99,6 +122,12 @@ main{
                     font-size: 16px;
                     font-weight: bolder;
                     background-color: nth($paleta-colores, 8);
+                    transition: 0.5s ease-in-out;
+                    transition-duration: 0.5s;
+                    &:hover{
+                        background-color: nth($paleta-colores, 12);
+                        transform: scale(1.04);
+                    }
                 }
             }
         }
@@ -121,11 +150,7 @@ main{
             margin-top: 10px;
         }
         }
-        div{
-            .carousel-item{
-                transition: 1s ease, 1s ease-out
-            }
-        }
+
     }
     .producto-main .ingresos{
         color: rgb(22, 21, 21);
