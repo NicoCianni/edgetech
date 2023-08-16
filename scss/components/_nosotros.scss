@@ -1,6 +1,6 @@
 .section-nosotros{
     color: nth($paleta-colores, 3);
-    height: 100vh;
+    min-height: calc(100vh - 135.24px);
     text-align: center;
     background-image: url(../img/fondo-cibernetico.jpg);
     @extend %background;
@@ -20,7 +20,6 @@
             font-weight: bold;
             font-style: italic;
             padding-top: 25px;
-            margin: 30px;
             color:nth($paleta-colores, 10);
             text-shadow: 5px 0 nth($paleta-colores, 11);
         }
