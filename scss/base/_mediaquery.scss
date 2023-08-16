@@ -29,7 +29,7 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .section-nosotros div h2{
+    .section-nosotros div h1{
         font-size: 39px;
     }
 
@@ -39,7 +39,7 @@
 }
 
 @media screen and (max-width:1450px) {
-    main .hero div h2{
+    main .hero div h1{
         font-size: 60px;
     }
 
@@ -51,7 +51,7 @@
         font-size: 60px;
     }
 
-    .section-nosotros div h2{
+    .section-nosotros div h1{
         font-size: 37px;
     }
 
@@ -69,7 +69,11 @@
     }
 
     main .section-contacto div h4{
-        font-size: 22px;
+        font-size: 20px;
+    }
+
+    main .section-contacto div .end-form{
+        font-size: 13px;
     }
 }
 
@@ -91,7 +95,7 @@
         height: 400px;
     }
 
-    .section-nosotros div h2{
+    .section-nosotros div h1{
         font-size: 35px;
     }
 
@@ -147,7 +151,7 @@ header nav div .navbar-brand{
         padding: 5px;
     }
     
-    main .hero div h2{
+    main .hero div h1{
         font-size: 50px;
     }
 
@@ -190,7 +194,7 @@ header nav div .navbar-brand{
         margin-left: 30px;
     }
 
-    .section-nosotros div h2{
+    .section-nosotros div h1{
         font-size: 32px;
     }
 
@@ -247,7 +251,7 @@ header nav div .navbar-brand{
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .section-nosotros div h2{
+    .section-nosotros div h1{
         font-size: 30px;
     }
 
@@ -265,7 +269,11 @@ header nav div .navbar-brand{
     }
 
     main .section-contacto div h4{
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    main .section-contacto div .end-form{
+        font-size: 12px;
     }
 }
 
@@ -369,7 +377,12 @@ header nav div .navbar-brand{
     }
 
     main .section-contacto div h4{
-        font-size: 18px;
+        font-size: 17px;
+    }
+
+    main .section-contacto div .end-form{
+        font-size: 10px;
+        margin: 10px;
     }
 
     body footer div .logo-footer{
@@ -435,7 +448,7 @@ header nav div .navbar-brand{
         width: 550px;
     }
 
-    .section-nosotros div h2{
+    .section-nosotros div h1{
         font-size: 28px;
     }
 
@@ -544,30 +557,35 @@ header nav div .navbar-brand{
         font-size: 30px;
     }
 
-    .section-nosotros div h2{
+    .section-nosotros div h1{
         font-size: 25px;
     }
 
     .section-nosotros div p{
-        font-size: 22px;
+        font-size: 21px;
     }
 
     main .section-contacto .form{
         width: 70%;
-        height: 70%;
+        height: 75%;
     }
 
     main .section-contacto{
         font-size: 13px;
-        padding-top: 12px;
+        padding-top: 8px;
     }
 
     main .section-contacto div h3{
-        font-size: 16px;
+        font-size: 14px;
     }
 
     main .section-contacto div h4{
-        font-size: 16px;
+        font-size: 15px;
+    }
+
+    main .section-contacto div .end-form{
+        font-size: 10px;
+        margin: 10px;
     }
 }
 
@@ -592,7 +610,7 @@ header nav div .navbar-brand{
         margin-left: 15px;
     }
 
-    main .hero div h2{
+    main .hero div h1{
         font-size: 35px;
     }
 
@@ -659,7 +677,7 @@ header nav div .navbar-brand{
         font-size: 20px;
     }
 
-    .section-nosotros div h2{
+    .section-nosotros div h1{
         font-size: 25px;
     }
 
@@ -803,7 +821,7 @@ header nav div .navbar-brand{
         font-size: 20px;
     }
 
-    .section-nosotros div h2{
+    .section-nosotros div h1{
         font-size: 19px;
     }
 
@@ -821,7 +839,7 @@ header nav div .navbar-brand{
     }
 
     main .section-contacto div h4{
-        font-size: 15px;
+        font-size: 14px;
     }
 
     footer{

@@ -5,13 +5,13 @@
     background-image: url(../img/fondo-cibernetico.jpg);
     @extend %background;
     div{
-        h2{
+        h1{
             font-size: 60px;
             font-family: $primary-font-family;
             font-weight: bolder;
             text-decoration: underline;
             padding-top: 25px;
-            color: nth($paleta-colores, 5);
+            color: nth($paleta-colores, 10);
             text-shadow: 10px 0 nth($paleta-colores, 11);
         }
         p{
