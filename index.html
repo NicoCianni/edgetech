@@ -16,6 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilos.css">
+    <script src="main.js" defer></script>
     <title>EdgeTech | Inicio</title>
 </head>
 <body>
@@ -36,17 +37,37 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="./pages/productos.html">Productos</a>
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="./pages/servicios.html">Servicios</a>
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="./pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./pages/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./pages/nosotros.html">Nosotros</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="./pages/contacto.html">Contacto</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="#redes">Redes</a>
-                            <li><a href=""><img class="carrito" src="./img/carrito-de-compras.png" alt="Mi carrito"></a></li>
+                            </li>
+                            <li class="hidden-menu">
+                                <img class="carrito" src="./img/carrito-de-compras.png">
+                                <div id="shop-div" class="carrito-container">
+                                    <table id="shop-list" class="tabla-carrito">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Producto</th>
+                                                <th>Precio</th>
+                                                <th>Cantidad</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                    <button id="borrar-carrito">Borrar carrito actual</button>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -60,6 +81,7 @@
                 <p>Brindamos la mejor atención, y tenemos los mejores precios del mercado.</p>
             </div>
         </section>
+        <div id="producto-main">
         <section class="producto-main">
             <h2 class="destacado">¡Lo más destacado!</h2>
             <div class="producto-flex">
@@ -67,28 +89,28 @@
                     <img src="./img/nvidia-rtx-2060-asus.jpg" alt="Nvidia RTX 2060">
                     <h3>Nvidia RTX 2060 Asus 6GB</h3>
                     <p>$320.000,00</p>
-                    <a href="" class="boton1">Agregar al carrito</a>
+                    <a href="" class="boton1" id-num="1">Agregar al carrito</a>
                     <a href="" class="boton2">Comprar ahora</a>
                 </div>
                 <div>
                     <img src="./img/nvidia-rtx-2080ti-asus.jpg" alt="Nvidia RTX 2080ti">
                     <h3>Nvidia RTX 2080ti Asus</h3>
                     <p>$350.000,00</p>
-                    <a href="" class="boton1">Agregar al carrito</a>
+                    <a href="" class="boton1" id-num="2">Agregar al carrito</a>
                     <a href="" class="boton2">Comprar ahora</a>
                 </div>
                 <div>
                     <img src="./img/gabinete-aerocool-mecha.jpg" alt="Aerocool Mecha">
                     <h3>Gabinete Aerocool Mecha</h3>
                     <p>$28.300,00</p>
-                    <a href="" class="boton1">Agregar al carrito</a>
+                    <a href="" class="boton1" id-num="3">Agregar al carrito</a>
                     <a href="" class="boton2">Comprar ahora</a>
                 </div>
                 <div>
                     <img src="./img/monitor-odyssey-g4.jpg" alt="Monitor Odyssey G4">
                     <h3>Monitor Odyssey G4 27''</h3>
                     <p>$160.000,00</p>
-                    <a href="" class="boton1">Agregar al carrito</a>
+                    <a href="" class="boton1" id-num="4">Agregar al carrito</a>
                     <a href="" class="boton2">Comprar ahora</a>
                 </div>
             </div>
@@ -136,28 +158,28 @@
                     <img src="./img/intel-i7-10ma.jpg" alt="Intel I7 10ma">
                     <h3>Intel I7 10ma Generación</h3>
                     <p>$190.000,00</p>
-                    <a href="" class="boton1">Agregar al carrito</a>
+                    <a href="" class="boton1" id-num="5">Agregar al carrito</a>
                     <a href="" class="boton2">Comprar ahora</a>
                 </div>
                 <div>
                     <img src="./img/mouse-logitech-g502.jpg" alt="Logitech G502">
                     <h3>Mouse Logitech G502</h3>
                     <p>$35.800,00</p>
-                    <a href="" class="boton1">Agregar al carrito</a>
+                    <a href="" class="boton1" id-num="6">Agregar al carrito</a>
                     <a href="" class="boton2">Comprar ahora</a>
                 </div>
                 <div>
                     <img src="./img/monitor-aoc.jpg" alt="Monitor AOC">
                     <h3>Monitor AOC 27'' 144hz</h3>
                     <p>$120.000,00</p>
-                    <a href="" class="boton1">Agregar al carrito</a>
+                    <a href="" class="boton1" id-num="7">Agregar al carrito</a>
                     <a href="" class="boton2">Comprar ahora</a>
                 </div>
                 <div>
                     <img src="./img/silla-aerocool-admiral.jpg" alt="Silla Aerocool Admiral">
                     <h3>Silla Aerocool Admiral</h3>
                     <p>$210.000,00</p>
-                    <a href="" class="boton1">Agregar al carrito</a>
+                    <a href="" class="boton1" id-num="8">Agregar al carrito</a>
                     <a href="" class="boton2">Comprar ahora</a>
                 </div>
             </div>
@@ -180,32 +202,33 @@
                     <img src="./img/silla-corsair-t3(1).jpg" alt="Corsair T3">
                     <h3>Silla Corsair T3</h3>
                     <p>$203.000,00</p>
-                    <a href="" class="boton1">Agregar al carrito</a>
+                    <a href="" class="boton1" id-num="9">Agregar al carrito</a>
                     <a href="" class="boton2">Comprar ahora</a>
                 </div>
                 <div>
                     <img src="./img/ryzen7-5800.jpeg" alt="Ryzen 7 5800">
                     <h3>Procesador Ryzen 7 5800</h3>
                     <p>$160.000,00</p>
-                    <a href="" class="boton1">Agregar al carrito</a>
+                    <a href="" class="boton1" id-num="10">Agregar al carrito</a>
                     <a href="" class="boton2">Comprar ahora</a>
                 </div>
                 <div>
                     <img src="./img/silla-noganet-verde.jpg" alt="Silla Noganet">
                     <h3>Silla Gaming Noganet</h3>
                     <p>$110.000,00</p>
-                    <a href="" class="boton1">Agregar al carrito</a>
+                    <a href="" class="boton1" id-num="11">Agregar al carrito</a>
                     <a href="" class="boton2">Comprar ahora</a>
                 </div>
                 <div>
                     <img src="./img/mouse-logitech-g305.jpg" alt="Logitech G305">
                     <h3>Mouse Logitech G305</h3>
                     <p>$22.500,00</p>
-                    <a href="" class="boton1">Agregar al carrito</a>
+                    <a href="" class="boton1" id-num="12">Agregar al carrito</a>
                     <a href="" class="boton2">Comprar ahora</a>
                 </div>
             </div>
         </section>
+    </div>
         <footer id="redes">
             <div>
                 <img class="logo-footer" src="./img/logo-edge.png" alt="Logo Edge">
@@ -228,6 +251,5 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
-        <script src="main.js"></script>
 </body>
 </html>

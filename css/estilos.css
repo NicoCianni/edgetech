@@ -50,15 +50,58 @@ header nav {
     font-weight: bolder;
     color: blanchedalmond;
     margin-left: 25px; }
+    header nav div ul li .carrito {
+      width: 32px;
+      cursor: pointer; }
     header nav div ul li:hover {
-      cursor: pointer;
       transform: scale(1.2) skew(-1deg);
       -webkit-transform: scale(1.2) skew(-1deg);
       -moz-transform: scale(1.2) skew(-1deg); }
-    header nav div ul li .carrito {
-      width: 60px;
-      padding-right: 20px;
-      display: flex; }
+  header nav div .hidden-menu {
+    text-align: center; }
+    header nav div .hidden-menu .carrito-container {
+      display: none; }
+    header nav div .hidden-menu:hover .carrito-container {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 100%;
+      z-index: 1;
+      background-color: rgba(194, 192, 192, 0.849);
+      border: 2px solid black;
+      padding: 20px;
+      min-width: 300px;
+      min-height: 400px; }
+      header nav div .hidden-menu:hover .carrito-container .tabla-carrito th {
+        cursor: pointer;
+        color: black;
+        padding: 12px;
+        font-size: 14px; }
+      header nav div .hidden-menu:hover .carrito-container .tabla-carrito .nueva-fila {
+        font-size: 13px;
+        padding: 2px;
+        color: black; }
+      header nav div .hidden-menu:hover .carrito-container .tabla-carrito .borrar-item {
+        color: black;
+        font-size: 12px;
+        background-color: whitesmoke;
+        border-radius: 4px;
+        border: 1px solid gray;
+        padding: 2px;
+        transition: 1.5s; }
+        header nav div .hidden-menu:hover .carrito-container .tabla-carrito .borrar-item:hover {
+          background-color: rgba(218, 9, 9, 0.884);
+          color: white; }
+      header nav div .hidden-menu:hover .carrito-container button {
+        font-size: 12px;
+        color: white;
+        border-radius: 4px;
+        background-color: red;
+        border: 1px solid black;
+        box-shadow: 3px 4 black;
+        padding: 3px;
+        font-weight: bold;
+        font-family: "Noto Sans JP", sans-serif; }
 
 main .hero {
   display: flex;
