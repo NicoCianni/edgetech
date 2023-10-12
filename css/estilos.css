@@ -67,41 +67,51 @@ header nav {
       right: 0;
       top: 100%;
       z-index: 1;
-      background-color: rgba(194, 192, 192, 0.849);
+      background-color: #0c0c0c;
       border: 2px solid black;
       padding: 20px;
       min-width: 300px;
       min-height: 400px; }
       header nav div .hidden-menu:hover .carrito-container .tabla-carrito th {
         cursor: pointer;
-        color: black;
-        padding: 12px;
-        font-size: 14px; }
+        color: white;
+        font-size: 14px;
+        padding: 25px; }
       header nav div .hidden-menu:hover .carrito-container .tabla-carrito .nueva-fila {
         font-size: 13px;
-        padding: 2px;
-        color: black; }
+        color: white;
+        margin: 10px; }
+        header nav div .hidden-menu:hover .carrito-container .tabla-carrito .nueva-fila img {
+          padding: 2px; }
       header nav div .hidden-menu:hover .carrito-container .tabla-carrito .borrar-item {
         color: black;
         font-size: 12px;
         background-color: whitesmoke;
         border-radius: 4px;
-        border: 1px solid gray;
+        border: 2px solid gray;
         padding: 2px;
         transition: 1.5s; }
         header nav div .hidden-menu:hover .carrito-container .tabla-carrito .borrar-item:hover {
           background-color: rgba(218, 9, 9, 0.884);
-          color: white; }
+          color: white;
+          box-shadow: -1px 0px 8px 19px rgba(199, 186, 186, 0.84);
+          -webkit-box-shadow: -1px 0px 8px 1px rgba(199, 186, 186, 0.84);
+          -moz-box-shadow: -1px 0px 8px 1px rgba(199, 186, 186, 0.84); }
       header nav div .hidden-menu:hover .carrito-container button {
         font-size: 12px;
         color: white;
         border-radius: 4px;
         background-color: red;
-        border: 1px solid black;
+        border: 2px solid grey;
         box-shadow: 3px 4 black;
         padding: 3px;
         font-weight: bold;
-        font-family: "Noto Sans JP", sans-serif; }
+        font-family: "Noto Sans JP", sans-serif;
+        transition-duration: 2s; }
+        header nav div .hidden-menu:hover .carrito-container button:hover {
+          box-shadow: -1px 0px 8px 19px rgba(199, 186, 186, 0.84);
+          -webkit-box-shadow: -1px 0px 8px 3px rgba(199, 186, 186, 0.84);
+          -moz-box-shadow: -1px 0px 8px 3px rgba(199, 186, 186, 0.84); }
 
 main .hero {
   display: flex;
