@@ -98,11 +98,42 @@ function limpiarCarrito(){
 }
 
 function resetCarrito(){
-    while(rellenoCarrito.firstChild){
-        rellenoCarrito.removeChild(rellenoCarrito.firstChild)
-    }
-    productosCarrito = []
-    updateStorage()
+    const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+            confirmButton: 'btn btn-success',
+            cancelButton: 'btn btn-danger'
+        },
+        buttonsStyling: false
+    })
+    swalWithBootstrapButtons.fire({
+        title: 'Estás seguro?',
+        text: "Se va a borrar todo el carrito actual!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Sí, borrar!',
+        cancelButtonText: 'No, cancelar!',
+        reverseButtons: true
+    }).then((result) => {
+        if (result.isConfirmed) {
+            swalWithBootstrapButtons.fire(
+                'El carrito se borró por completo!',
+                'Ya podés volver a cargar tu compra 😄.',
+                'success'
+            )
+            while(rellenoCarrito.firstChild){
+                rellenoCarrito.removeChild(rellenoCarrito.firstChild)
+            }
+            productosCarrito = []
+            updateStorage()
+        } else if (result.dismiss === Swal.DismissReason.cancel
+            ) {
+                swalWithBootstrapButtons.fire(
+                    'Cancelado!',
+                    'Tu carrito sigue guardado 🌟.',
+                    'success'
+                )
+            }
+        })
 }
 
 function updateStorage(){
