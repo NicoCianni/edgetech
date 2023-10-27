@@ -139,3 +139,25 @@ function resetCarrito(){
 function updateStorage(){
     localStorage.setItem("shop", JSON.stringify(productosCarrito))
 }
+
+
+// --------- Formulario Contacto ----------- //
+
+const formContacto = document.querySelector("#form")
+
+formContacto.addEventListener("submit", reaccionSubmit)
+
+async function reaccionSubmit(event){
+    event.preventDefault()
+    const form = new FormData(this)
+    const respuesta = await fetch(this.action, {
+        method: this.method,
+        body: form,
+        headers: {
+            "Accept": "application/json"
+        }
+    })
+    if (respuesta.ok){
+        formContacto.reset()
+    }
+}
